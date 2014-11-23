@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/black"
+            android:columnCount="3"
+            android:rowCount="8" >
+
+            <TextView
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="声调" />
+
+            <TextView
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="变调规则" />
+
+            <TextView
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="练习" />
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="1" />
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="1→7" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="青青" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="甜甜" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="冰冰" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="粗粗" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="呆呆" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="2" />
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="2→1" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="险险" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="痟痟" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="烧滚滚" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="害了了" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="注好好" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="3" />
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="3→2" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="臭臭" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="笑笑" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="红绛绛" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="行透透" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="活跳跳" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_rowSpan="2"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="4" />
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="4→8\n(-p-t-k)" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="必必" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="覆覆" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="忧结结" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="看出出" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="澹漉漉" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="4→2\n(-h)" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="粕粕" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="瞌瞌" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="赤赤" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="鸭肉" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="各样" />
+            </LinearLayout>
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_rowSpan="2"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="5" />
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="5→7\n(漳)" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="明明" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="油油" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="咸咸" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="揽牢牢" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="烂糊糊" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="5→3\n(泉)" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="明明" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="油油" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="咸咸" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="揽牢牢" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="烂糊糊" />
+            </LinearLayout>
+            
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="7" />
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="7→3" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="慢慢" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="现现" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="旧旧" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="激外外" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="惜命命" />
+            </LinearLayout>
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_rowSpan="2"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="8" />
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="8→4\n(-p-t-k)" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="直直" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="捷捷" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="熟熟" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="洘秫秫" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="特别" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="8→3\n(-h)" />
+
+            <LinearLayout
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_margin="1dp"
+                
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="食药" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="药局" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="历日" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="月日" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="著铳" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

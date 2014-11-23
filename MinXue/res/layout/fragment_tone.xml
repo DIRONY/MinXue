@@ -1,0 +1,198 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToneFragment" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:columnCount="3"
+        android:rowCount="9" >
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="调类"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="示例"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="阴平"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="东"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="tong"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="阴上"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="党"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="tong"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="阴去"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="栋"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="tong"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="阴入"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="督"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="dok"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="阴平"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="同"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="tong"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="(阳上)"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="(动)"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="tong"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="阳去"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="洞"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="tong"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="阳入"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="毒"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="tok"
+            android:textSize="35sp" />
+    </GridLayout>
+
+</FrameLayout>

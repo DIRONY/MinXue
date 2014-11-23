@@ -1,0 +1,640 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToneFragment" >
+
+    <GridLayout
+        android:id="@+id/pinyin_section_fst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:columnCount="7"
+        android:rowCount="6" >
+
+        <Space
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="a"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="i"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="u"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="e"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="o"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="oo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="k"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="ka"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="ki"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ku"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="ke"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="ko"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="koo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="kh"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="kha"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="khi"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="khu"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="khe"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="kho"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal|fill_vertical"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="khoo"
+            android:textSize="20sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="g"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ga"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="gi"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="gu"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ge"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="go"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="goo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ng"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="nga"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="ngi"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ngu"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="nge"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="ngo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal|fill_vertical"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ngoo"
+            android:textSize="19sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="h"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="ha"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="hi"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="hu"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="he"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ho"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="hoo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/pinyin_section_snd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="90dp"
+        android:columnCount="7"
+        android:rowCount="5" >
+        <Space
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="a"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="i"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="u"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="e"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="o"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="oo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+        
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ts"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+        
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="tsa"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="tsi"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="tsu"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="tse"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="tso"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="tsoo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="tsh"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="tsha"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="tshi"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="tshu"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="tshe"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="tsho"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal|fill_vertical"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="tshoo"
+            android:textSize="16sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="s"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="sa"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="si"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="su"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="se"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="so"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="soo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="j"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="ja"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="ji"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="ju"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softred"
+            android:gravity="center"
+            android:text="je"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal"
+            android:background="@color/softyellow"
+            android:gravity="center"
+            android:text="jo"
+            android:textSize="21sp"
+            android:width="42.5dp" />
+
+        <TextView
+            android:layout_gravity="fill_horizontal|fill_vertical"
+            android:background="@color/softgreen"
+            android:gravity="center"
+            android:text="joo"
+            android:textSize="19sp"
+            android:width="42.5dp" />
+    </GridLayout>
+
+</LinearLayout>

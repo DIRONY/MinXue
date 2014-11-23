@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deepblue">#0067a6</color>
+    <color name="tab_background_color">#f2e7da</color>
+    <color name="softgreen">#008972</color>
+    <color name="softyellow">#efc028</color>
+    <color name="softred">#f2572d</color>
+    
+</resources>
