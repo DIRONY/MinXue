@@ -1,0 +1,15 @@
+package com.sea.minxue.dialogue;
+
+import com.sea.minxue.R;
+
+import android.app.ExpandableListActivity;
+import android.os.Bundle;
+
+public class CategoryActivity extends ExpandableListActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_category);
+	}
+}

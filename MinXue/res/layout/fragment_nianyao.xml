@@ -27,11 +27,13 @@
             android:orientation="horizontal" >
 
             <Button
+                android:id="@+id/a_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="念一下" />
 
             <Button
+                android:id="@+id/a_sing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="唱一下" />
@@ -56,11 +58,13 @@
             android:orientation="horizontal" >
 
             <Button
+                android:id="@+id/i_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="念一下" />
 
             <Button
+                android:id="@+id/i_sing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="唱一下" />
@@ -84,11 +88,13 @@
             android:orientation="horizontal" >
 
             <Button
+                android:id="@+id/u_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="念一下" />
 
             <Button
+                android:id="@+id/u_sing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="唱一下" />
@@ -112,11 +118,13 @@
             android:orientation="horizontal" >
 
             <Button
+                android:id="@+id/e_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="念一下" />
 
             <Button
+                android:id="@+id/e_sing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="唱一下" />
@@ -139,11 +147,13 @@
             android:orientation="horizontal" >
 
             <Button
+                android:id="@+id/o_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="念一下" />
 
             <Button
+                android:id="@+id/o_sing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="唱一下" />
@@ -166,11 +176,13 @@
             android:orientation="horizontal" >
 
             <Button
+                android:id="@+id/oo_read"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="念一下" />
 
             <Button
+                android:id="@+id/oo_sing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="唱一下" />

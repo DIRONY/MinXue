@@ -1,0 +1,23 @@
+package com.sea.minxue.dialogue;
+
+public class DataUtil {
+	private String original;
+	private String translate;
+	private String pinyin;
+	public DataUtil(String original, String translate, String pinyin) {
+		super();
+		this.original = original;
+		this.translate = translate;
+		this.pinyin = pinyin;
+	}
+	
+	public String getOriginal() {
+		return original;
+	}
+	public String getTranslate() {
+		return translate;
+	}
+	public String getPinyin() {
+		return pinyin;
+	}
+}

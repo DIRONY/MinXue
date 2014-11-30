@@ -3,9 +3,12 @@ package com.sea.minxue;
 import com.sea.minxue.dialogue.DialogueFragment;
 import com.sea.minxue.translate.TraslateFragment;
 import com.sea.minxue.usercenter.UsercenterFragment;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTabHost;
+import android.support.v4.app.FragmentTransaction;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -30,12 +33,13 @@ public class MainActivity extends ActionBarActivity {
 	private int mImageViewArray[] = { R.drawable.tab_zhuye,
 			R.drawable.tab_duihua, R.drawable.tab_fanyi, R.drawable.tab_yonghu };
 
-	@SuppressLint("InflateParams")
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
+		
 		mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 		for (int i = 0; i < fragmentArray.length; i++) {
 
@@ -52,6 +56,7 @@ public class MainActivity extends ActionBarActivity {
 			TabSpec minxue_tab_spec = mTabHost.newTabSpec(
 					(String) mTextviewArray[i]).setIndicator(view);
 			mTabHost.addTab(minxue_tab_spec, fragmentArray[i], null);
+			
 		}
 	}
 

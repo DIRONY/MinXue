@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.support.v4.app.FragmentTabHost"/>
-<fullyQualifiedTypeName name="com.sea.minxue.dialogue.DialogueFragment"/>
-<fullyQualifiedTypeName name="com.sea.minxue.usercenter.UsercenterFragment"/>
-<fullyQualifiedTypeName name="com.sea.minxue.R.drawable"/>
-<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
-<fullyQualifiedTypeName name="android.support.v7.appcompat.R"/>
-<fullyQualifiedTypeName name="android.support.v7.appcompat.R.id"/>
-<fullyQualifiedTypeName name="android.widget.TabHost.TabSpec"/>
-<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
-<fullyQualifiedTypeName name="android.widget.ImageView"/>
 <fullyQualifiedTypeName name="android.R.raw"/>
-<fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="android.support.v7.app.ActionBar"/>
 <fullyQualifiedTypeName name="java.lang.CharSequence"/>
-<fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="android.support.v4.view.ViewPager"/>
 <fullyQualifiedTypeName name="android.app.ActionBar.TabListener"/>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentPagerAdapter"/>
@@ -24,7 +12,6 @@
 <fullyQualifiedTypeName name="com.sea.minxue.R.string"/>
 <fullyQualifiedTypeName name="com.sea.minxue.ToneFragment"/>
 <fullyQualifiedTypeName name="com.sea.minxue.PinyinFragment"/>
-<fullyQualifiedTypeName name="com.sea.minxue.R.layout"/>
 <fullyQualifiedTypeName name="android.view.Window"/>
 <fullyQualifiedTypeName name="android.app.ActionBar"/>
 <fullyQualifiedTypeName name="android.widget.Gallery"/>
@@ -32,16 +19,11 @@
 <fullyQualifiedTypeName name="com.sea.minxue.NianyaoFragment"/>
 <fullyQualifiedTypeName name="android.support.v4.view.ViewPager.OnPageChangeListener"/>
 <fullyQualifiedTypeName name="android.widget.Button"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.os.Handler"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="com.sea.minxue.R"/>
-<fullyQualifiedTypeName name="com.sea.minxue.R.id"/>
 <fullyQualifiedTypeName name="android.database.sqlite.SQLiteDatabase"/>
-<fullyQualifiedTypeName name="com.sea.minxue.QuestionDatabaseHelper"/>
-<fullyQualifiedTypeName name="android.database.Cursor"/>
 <fullyQualifiedTypeName name="android.app.AlertDialog"/>
 <fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
 <fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
@@ -52,4 +34,30 @@
 <fullyQualifiedTypeName name="com.sea.minxue.Pinyin.StartGame"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="com.sea.minxue.MainActivity"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentTransaction"/>
+<fullyQualifiedTypeName name="android.os.DropBoxManager.Entry"/>
+<fullyQualifiedTypeName name="android.app.ExpandableListActivity"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.widget.CursorTreeAdapter"/>
+<fullyQualifiedTypeName name="com.sea.minxue.QuestionDatabaseHelper"/>
+<fullyQualifiedTypeName name="com.sea.minxue.dialogue.CategoryAdapter"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="com.sea.minxue.dialogue.CategoryAdapter.GroupCache"/>
+<fullyQualifiedTypeName name="com.sea.minxue.dialogue.CategoryAdapter.ChildrenCache"/>
+<fullyQualifiedTypeName name="android.widget.BaseExpandableListAdapter"/>
+<fullyQualifiedTypeName name="android.database.Cursor"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.sea.minxue.R.layout"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.sea.minxue.dialogue.DataUtil"/>
+<fullyQualifiedTypeName name="android.widget.ExpandableListView.OnGroupClickListener"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="com.sea.minxue.R"/>
+<fullyQualifiedTypeName name="com.sea.minxue.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 </qualifiedTypeNameHistroy>

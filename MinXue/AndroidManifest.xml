@@ -28,6 +28,10 @@
         <activity android:name=".Finals" />
         <activity android:name=".Mtone" />
         <activity android:name=".Tone" />
+        <activity
+            android:name="com.sea.minxue.dialogue.CategoryActivity"
+            android:label="@string/title_activity_category" >
+        </activity>
     </application>
 
     <!-- To access Google+ APIs: -->

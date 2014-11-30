@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fschild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/horn"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/horn"
+        android:gravity="left|center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="children" />
+
+    <ImageView
+        android:id="@+id/horn"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/horn" />
+
+    <TextView
+        android:id="@+id/scchild"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fschild"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:text="pinyin" />
+
+</RelativeLayout>
