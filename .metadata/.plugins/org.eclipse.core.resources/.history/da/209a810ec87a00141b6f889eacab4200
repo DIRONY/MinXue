@@ -1,0 +1,56 @@
+package com.sea.minxue;
+
+import android.content.Context;
+import android.media.AudioManager;
+import android.media.SoundPool;
+import android.media.SoundPool.OnLoadCompleteListener;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+public class GeyaoFragment extends Fragment implements OnClickListener {
+	
+	private Button playbtn;
+	public static GeyaoFragment newInstance() {
+		GeyaoFragment fragment = new GeyaoFragment();
+		return fragment;
+	}
+
+	public GeyaoFragment() {
+
+	}
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		// Inflate the layout for this fragment
+		View view = inflater.inflate(R.layout.fragment_geyao, container, false);
+		playbtn=(Button) view.findViewById(R.id.sing_btn);
+		playbtn.setOnClickListener(this);
+		return view;
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		final SoundPool sound=new SoundPool(1, AudioManager.STREAM_MUSIC, 20);
+		final int playId=sound.load(getActivity(), R.raw.music, 0);
+		AudioManager amr=(AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
+		float audioMaxVolumn = amr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);  
+        float audioCurrentVolumn = amr.getStreamVolume(AudioManager.STREAM_MUSIC);  
+        final float volumnRatio = audioCurrentVolumn/audioMaxVolumn;
+		sound.setOnLoadCompleteListener(new OnLoadCompleteListener() {
+			
+			@Override
+			public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
+				// TODO Auto-generated method stub
+				sound.play(playId, volumnRatio, volumnRatio, 0, 0, 1);
+			}
+		});
+	}
+	
+}

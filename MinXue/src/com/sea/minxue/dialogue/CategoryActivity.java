@@ -6,6 +6,7 @@ import com.sea.minxue.R;
 import android.app.ExpandableListActivity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.media.AudioManager;
 import android.os.Bundle;
 
 public class CategoryActivity extends ExpandableListActivity {
@@ -19,6 +20,8 @@ public class CategoryActivity extends ExpandableListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_category);
+		setVolumeControlStream(AudioManager.STREAM_MUSIC);
+		
 		sql_code=getIntent().getIntExtra("position", 0);
 		questiondbhelper=new QuestionDatabaseHelper(this);
 		questiondb=questiondbhelper.getWritableDatabase();

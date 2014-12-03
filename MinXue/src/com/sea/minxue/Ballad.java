@@ -9,6 +9,7 @@ import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.app.ActionBar.TabListener;
 import android.app.FragmentTransaction;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -29,10 +30,11 @@ public class Ballad extends ActionBarActivity implements TabListener {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.geyao_layout);
+		setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		actionBar.setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP);
-
+		
 		mSectionsPagerAdapter = new SectionsPagerAdapter(
 				getSupportFragmentManager());
 		mViewPager = (ViewPager) findViewById(R.id.pager);

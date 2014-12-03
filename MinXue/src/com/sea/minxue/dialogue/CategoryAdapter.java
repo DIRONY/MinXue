@@ -30,6 +30,9 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
 	private SoundPool sound;
 	QuestionDatabaseHelper questiondbhelper;
 	SQLiteDatabase questiondb;
+	private float audioMaxVolumn;
+	private float audioCurrentVolumn;
+	private float volumnRatio;
 	public CategoryAdapter(Context context, Cursor c,int cate) {
 		super();
 		mInflater = (LayoutInflater) context  
@@ -40,6 +43,10 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
 		questiondbhelper=new QuestionDatabaseHelper(context);
 		questiondb=questiondbhelper.getWritableDatabase();
 		sound=new SoundPool(1, AudioManager.STREAM_MUSIC, 20);
+		AudioManager amr=(AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
+		audioMaxVolumn = amr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);  
+        audioCurrentVolumn = amr.getStreamVolume(AudioManager.STREAM_MUSIC);  
+        volumnRatio = audioCurrentVolumn/audioMaxVolumn;
 	}
 	
 	@Override
@@ -140,10 +147,7 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
 				final String packageName = context.getPackageName();
 				int soundId=res.getIdentifier(aud, "raw", packageName);
 				
-				AudioManager amr=(AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-				float audioMaxVolumn = amr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);  
-		        float audioCurrentVolumn = amr.getStreamVolume(AudioManager.STREAM_MUSIC);  
-		        float volumnRatio = audioCurrentVolumn/audioMaxVolumn;
+				
 				
 				@Override
 				public void onClick(View v) {

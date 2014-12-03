@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.R.raw"/>
-<fullyQualifiedTypeName name="android.support.v7.app.ActionBar"/>
-<fullyQualifiedTypeName name="java.lang.CharSequence"/>
-<fullyQualifiedTypeName name="android.support.v4.view.ViewPager"/>
-<fullyQualifiedTypeName name="android.app.ActionBar.TabListener"/>
-<fullyQualifiedTypeName name="android.support.v4.app.FragmentPagerAdapter"/>
-<fullyQualifiedTypeName name="android.support.v4.app.FragmentActivity"/>
-<fullyQualifiedTypeName name="android.support.v7.app.ActionBarActivity"/>
 <fullyQualifiedTypeName name="java.util.Locale"/>
 <fullyQualifiedTypeName name="com.sea.minxue.R.string"/>
 <fullyQualifiedTypeName name="com.sea.minxue.ToneFragment"/>
@@ -18,7 +10,6 @@
 <fullyQualifiedTypeName name="com.sea.minxue.GeyaoFragment"/>
 <fullyQualifiedTypeName name="com.sea.minxue.NianyaoFragment"/>
 <fullyQualifiedTypeName name="android.support.v4.view.ViewPager.OnPageChangeListener"/>
-<fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="android.os.Handler"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
@@ -47,8 +38,6 @@
 <fullyQualifiedTypeName name="com.sea.minxue.dialogue.CategoryAdapter.ChildrenCache"/>
 <fullyQualifiedTypeName name="android.widget.BaseExpandableListAdapter"/>
 <fullyQualifiedTypeName name="android.database.Cursor"/>
-<fullyQualifiedTypeName name="android.content.Context"/>
-<fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="com.sea.minxue.R.layout"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
@@ -56,8 +45,19 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.sea.minxue.dialogue.DataUtil"/>
 <fullyQualifiedTypeName name="android.widget.ExpandableListView.OnGroupClickListener"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
-<fullyQualifiedTypeName name="com.sea.minxue.R"/>
-<fullyQualifiedTypeName name="com.sea.minxue.R.id"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.media.SoundPool"/>
+<fullyQualifiedTypeName name="android.content.res.Resources"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.sea.minxue.R.id"/>
+<fullyQualifiedTypeName name="android.media.SoundPool.OnLoadCompleteListener"/>
+<fullyQualifiedTypeName name="android.media.AudioManager"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="com.sea.minxue.R"/>
+<fullyQualifiedTypeName name="com.sea.minxue.R.raw"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer.OnCompletionListener"/>
 </qualifiedTypeNameHistroy>

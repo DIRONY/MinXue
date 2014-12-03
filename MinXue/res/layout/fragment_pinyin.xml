@@ -78,6 +78,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ka"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -86,6 +87,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ki"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -94,6 +96,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ku"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -102,6 +105,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ke"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -110,6 +114,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ko"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -118,6 +123,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/koo"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -134,6 +140,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/kha"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -142,6 +149,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/khi"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -150,6 +158,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/khu"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -158,6 +167,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/khe"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -166,6 +176,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/kho"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -174,6 +185,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/khoo"
             android:layout_gravity="fill_horizontal|fill_vertical"
             android:background="@color/softred"
             android:gravity="center"
@@ -190,6 +202,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ga"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -198,6 +211,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/gi"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -206,6 +220,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/gu"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -214,6 +229,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ge"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -222,6 +238,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/go"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -230,6 +247,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/goo"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -246,6 +264,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/nga"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -254,6 +273,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ngi"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -262,6 +282,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ngu"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -270,6 +291,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/nge"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -278,6 +300,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ngo"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -286,6 +309,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ngoo"
             android:layout_gravity="fill_horizontal|fill_vertical"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -302,6 +326,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ha"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -310,6 +335,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/hi"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -318,6 +344,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/hu"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -326,6 +353,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/he"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -334,6 +362,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ho"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -342,6 +371,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/hoo"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -421,6 +451,7 @@
             android:width="42.5dp" />
         
         <TextView
+            android:id="@+id/tsa"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -429,6 +460,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tsi"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -437,6 +469,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tsu"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -445,6 +478,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tse"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -453,6 +487,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tso"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -461,6 +496,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tsoo"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -477,6 +513,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tsha"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -485,6 +522,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tshi"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -493,6 +531,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tshu"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -501,6 +540,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tshe"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -509,6 +549,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tsho"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -517,6 +558,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/tshoo"
             android:layout_gravity="fill_horizontal|fill_vertical"
             android:background="@color/softred"
             android:gravity="center"
@@ -533,6 +575,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/sa"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -541,6 +584,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/si"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -549,6 +593,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/su"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -557,6 +602,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/se"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -565,6 +611,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/so"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -573,6 +620,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/soo"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -589,6 +637,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ja"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -597,6 +646,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ji"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -605,6 +655,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/ju"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softgreen"
             android:gravity="center"
@@ -613,6 +664,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/je"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softred"
             android:gravity="center"
@@ -621,6 +673,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/jo"
             android:layout_gravity="fill_horizontal"
             android:background="@color/softyellow"
             android:gravity="center"
@@ -629,6 +682,7 @@
             android:width="42.5dp" />
 
         <TextView
+            android:id="@+id/joo"
             android:layout_gravity="fill_horizontal|fill_vertical"
             android:background="@color/softgreen"
             android:gravity="center"

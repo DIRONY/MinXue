@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.app.FragmentTransaction;
 import android.annotation.SuppressLint;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -39,7 +40,6 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
-		
 		mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 		for (int i = 0; i < fragmentArray.length; i++) {
 
