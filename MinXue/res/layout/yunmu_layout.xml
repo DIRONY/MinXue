@@ -455,11 +455,11 @@
             android:orientation="horizontal" >
 
             <TextView
-                android:id="@+id/oing"
+                android:id="@+id/iong"
                 android:layout_width="74dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="oing"
+                android:text="iong"
                 android:textSize="35sp" />
 
             <View
@@ -966,11 +966,11 @@
                 android:background="@android:color/black" />
 
             <TextView
-                android:id="@+id/aip"
+                android:id="@+id/iap"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="aip"
+                android:text="iap"
                 android:textSize="35sp" />
         </LinearLayout>
 
@@ -1029,11 +1029,11 @@
                 android:background="@android:color/black" />
 
             <TextView
-                android:id="@+id/ait"
+                android:id="@+id/iat"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="ait"
+                android:text="iat"
                 android:textSize="35sp" />
 
             <View

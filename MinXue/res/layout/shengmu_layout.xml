@@ -189,11 +189,11 @@
             android:background="@android:color/black" />
 
         <TextView
-            android:id="@+id/gh"
+            android:id="@+id/ng"
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="gh"
+            android:text="ng"
             android:textSize="40sp" />
 
         <View

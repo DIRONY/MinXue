@@ -12,7 +12,7 @@
     <string name="biandiao_description">变调规则</string>
     <string name="fanyin_button_text">翻译</string>
     <string name="yonghu_title">用户中心</string>
-    <string name="fanyi_et_hint">请输入要翻译的词句</string>
+    <string name="fanyi_et_hint">请输入要翻译的字词</string>
     <string name="actionbar_backbtn_description">回退按钮</string>
     <string name="sc_shengmu">双唇声母</string>
     <string name="sjz_shengmu">舌尖中声母</string>

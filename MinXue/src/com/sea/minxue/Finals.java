@@ -2,22 +2,31 @@ package com.sea.minxue;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
+import android.media.AudioManager;
+import android.media.SoundPool;
+import android.media.SoundPool.OnLoadCompleteListener;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-public class Finals extends Activity implements OnClickListener {
+public class Finals extends Activity implements OnClickListener, OnLoadCompleteListener {
 
 	ActionBar actionBar;
 	private static CharSequence INTIALS_TITLE="‘œƒ∏ΩÈ…‹";
 	private TextView tv_actionbar_title;
 	private TextView a,i,u,e,o,oo,ai,au,ia,iu,io,ua,ui,
 	ue,iau,uai,m,ng,am,an,ang,im,in,ing,iam,ian,iang,un,
-	oing,uan,ong,uang,ann,inn,unn,enn,onn,ainn,aunn,iann,
+	iong,uan,ong,uang,ann,inn,unn,enn,onn,ainn,aunn,iann,
 	iunn,uinn,iaunn,uann,uainn,ah,ih,uh,eh,oh,auh,iah,iuh,
-	ioh,uah,uih,ueh,iauh,uaih,ap,ip,aip,at,it,ut,ait,ak,ik,
+	ioh,uah,uih,ueh,iauh,uaih,ap,ip,iap,at,it,ut,iat,ak,ik,
 	ok,iak,iok;
+	private SoundPool sound;
+	private float audioMaxVolumn;
+	private float audioCurrentVolumn;
+	private float volumnRatio;
+	private int soundid;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +39,12 @@ public class Finals extends Activity implements OnClickListener {
 		tv_actionbar_title=(TextView) actionBar.getCustomView()
 				.findViewById(R.id.actionbar_title);
 		tv_actionbar_title.setText(INTIALS_TITLE);
-		
+		sound=new SoundPool(1, AudioManager.STREAM_MUSIC, 20);
+		AudioManager amr=(AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
+		audioMaxVolumn = amr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);  
+        audioCurrentVolumn = amr.getStreamVolume(AudioManager.STREAM_MUSIC);  
+        volumnRatio = audioCurrentVolumn/audioMaxVolumn;
+        
 		a=(TextView) findViewById(R.id.a);
 		a.setOnClickListener(this);
 		
@@ -115,8 +129,8 @@ public class Finals extends Activity implements OnClickListener {
 		un=(TextView) findViewById(R.id.un);
 		un.setOnClickListener(this);
 		
-		oing=(TextView) findViewById(R.id.oing);
-		oing.setOnClickListener(this);
+		iong=(TextView) findViewById(R.id.iong);
+		iong.setOnClickListener(this);
 		
 		uan=(TextView) findViewById(R.id.uan);
 		uan.setOnClickListener(this);
@@ -214,8 +228,8 @@ public class Finals extends Activity implements OnClickListener {
 		ip=(TextView) findViewById(R.id.ip);
 		ip.setOnClickListener(this);
 		
-		aip=(TextView) findViewById(R.id.aip);
-		aip.setOnClickListener(this);
+		iap=(TextView) findViewById(R.id.iap);
+		iap.setOnClickListener(this);
 		
 		at=(TextView) findViewById(R.id.at);
 		at.setOnClickListener(this);
@@ -226,8 +240,8 @@ public class Finals extends Activity implements OnClickListener {
 		ut=(TextView) findViewById(R.id.ut);
 		ut.setOnClickListener(this);
 		
-		ait=(TextView) findViewById(R.id.ait);
-		ait.setOnClickListener(this);
+		iat=(TextView) findViewById(R.id.iat);
+		iat.setOnClickListener(this);
 		
 		ak=(TextView) findViewById(R.id.ak);
 		ak.setOnClickListener(this);
@@ -250,150 +264,298 @@ public class Finals extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.a:
+			soundid=sound.load(this, R.raw.a, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.i:
+			soundid=sound.load(this, R.raw.i, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.u:
+			soundid=sound.load(this, R.raw.u, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.e:
+			soundid=sound.load(this, R.raw.e, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.o:
+			soundid=sound.load(this, R.raw.o, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.oo:
+			soundid=sound.load(this, R.raw.oo, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ai:
+			soundid=sound.load(this, R.raw.ai, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.au:
+			soundid=sound.load(this, R.raw.au, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ia:
+			soundid=sound.load(this, R.raw.ia, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iu:
+			soundid=sound.load(this, R.raw.iu, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.io:
+			soundid=sound.load(this, R.raw.io, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ua:
+			soundid=sound.load(this, R.raw.ua, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ui:
+			soundid=sound.load(this, R.raw.ui, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ue:
+			soundid=sound.load(this, R.raw.ue, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iau:
+			soundid=sound.load(this, R.raw.iau, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uai:
+			soundid=sound.load(this, R.raw.uai, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.m:
+			soundid=sound.load(this, R.raw.m, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ng:
+			soundid=sound.load(this, R.raw.ng, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.am:
+			soundid=sound.load(this, R.raw.am, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.an:
+			soundid=sound.load(this, R.raw.an, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ang:
+			soundid=sound.load(this, R.raw.ang, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.im:
+			soundid=sound.load(this, R.raw.im, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.in:
+			soundid=sound.load(this, R.raw.in, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ing:
+			soundid=sound.load(this, R.raw.ing, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iam:
+			soundid=sound.load(this, R.raw.iam, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ian:
+			soundid=sound.load(this, R.raw.ian, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iang:
+			soundid=sound.load(this, R.raw.iang, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.un:
+			soundid=sound.load(this, R.raw.un, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
-		case R.id.oing:
+		case R.id.iong:
+			soundid=sound.load(this, R.raw.iong, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uan:
+			soundid=sound.load(this, R.raw.uan, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ong:
+			soundid=sound.load(this, R.raw.ong, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uang:
+			soundid=sound.load(this, R.raw.uang, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ann:
+			soundid=sound.load(this, R.raw.ann, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.inn:
+			soundid=sound.load(this, R.raw.inn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.unn:
+			soundid=sound.load(this, R.raw.unn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.enn:
+			soundid=sound.load(this, R.raw.enn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.onn:
+			soundid=sound.load(this, R.raw.onn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ainn:
+			soundid=sound.load(this, R.raw.ainn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.aunn:
+			soundid=sound.load(this, R.raw.aunn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iann:
+			soundid=sound.load(this, R.raw.iann, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iunn:
+			soundid=sound.load(this, R.raw.iunn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uinn:
+			soundid=sound.load(this, R.raw.uinn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iaunn:
+			soundid=sound.load(this, R.raw.iaunn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uann:
+			soundid=sound.load(this, R.raw.uann, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uainn:
+			soundid=sound.load(this, R.raw.uainn, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ah:
+			soundid=sound.load(this, R.raw.ah, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ih:
+			soundid=sound.load(this, R.raw.ih, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uh:
+			soundid=sound.load(this, R.raw.uh, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.eh:
+			soundid=sound.load(this, R.raw.eh, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.oh:
+			soundid=sound.load(this, R.raw.oh, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.auh:
+			soundid=sound.load(this, R.raw.auh, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iah:
+			soundid=sound.load(this, R.raw.iah, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iuh:
+			soundid=sound.load(this, R.raw.iuh, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ioh:
+			soundid=sound.load(this, R.raw.ioh, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uah:
+			soundid=sound.load(this, R.raw.uah, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uih:
+			soundid=sound.load(this, R.raw.uih, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ueh:
+			soundid=sound.load(this, R.raw.ueh, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iauh:
+			soundid=sound.load(this, R.raw.iauh, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.uaih:
+			soundid=sound.load(this, R.raw.uaih, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ap:
+			soundid=sound.load(this, R.raw.ap, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ip:
+			soundid=sound.load(this, R.raw.ip, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
-		case R.id.aip:
+		case R.id.iap:
+			soundid=sound.load(this, R.raw.iap, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.at:
+			soundid=sound.load(this, R.raw.at, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.it:
+			soundid=sound.load(this, R.raw.it, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ut:
+			soundid=sound.load(this, R.raw.ut, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
-		case R.id.ait:
+		case R.id.iat:
+			soundid=sound.load(this, R.raw.iat, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ak:
+			soundid=sound.load(this, R.raw.ak, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ik:
+			soundid=sound.load(this, R.raw.ik, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.ok:
+			soundid=sound.load(this, R.raw.ok, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iak:
+			soundid=sound.load(this, R.raw.iak, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		case R.id.iok:
+			soundid=sound.load(this, R.raw.iok, 0);
+			sound.setOnLoadCompleteListener(this);
 			break;
 		default:
 			break;
 		}
+	}
+
+	@Override
+	public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
+		// TODO Auto-generated method stub
+		sound.play(soundid, volumnRatio, volumnRatio, 0, 0, 1);
 	}
 	
 }
