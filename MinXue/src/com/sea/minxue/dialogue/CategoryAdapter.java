@@ -11,6 +11,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.media.SoundPool.OnLoadCompleteListener;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -23,7 +24,7 @@ import android.widget.Toast;
 public class CategoryAdapter extends BaseExpandableListAdapter {
 
 	private LayoutInflater mInflater = null;
-	private String ori,tra,pin,aud;
+	private String ori, tra, pin, aud;
 	private Cursor cursor;
 	private int cate;
 	private Context context;
@@ -33,22 +34,25 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
 	private float audioMaxVolumn;
 	private float audioCurrentVolumn;
 	private float volumnRatio;
-	public CategoryAdapter(Context context, Cursor c,int cate) {
-		super();
-		mInflater = (LayoutInflater) context  
-		        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		this.cursor=c;
-		this.cate=cate;
-		this.context=context;
-		questiondbhelper=new QuestionDatabaseHelper(context);
-		questiondb=questiondbhelper.getWritableDatabase();
-		sound=new SoundPool(1, AudioManager.STREAM_MUSIC, 20);
-		AudioManager amr=(AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-		audioMaxVolumn = amr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);  
-        audioCurrentVolumn = amr.getStreamVolume(AudioManager.STREAM_MUSIC);  
-        volumnRatio = audioCurrentVolumn/audioMaxVolumn;
-	}
 	
+	public CategoryAdapter(Context context, Cursor c, int cate) {
+		super();
+		mInflater = (LayoutInflater) context
+				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		this.cursor = c;
+		this.cate = cate;
+		this.context = context;
+		questiondbhelper = new QuestionDatabaseHelper(context);
+		questiondb = questiondbhelper.getWritableDatabase();
+
+		sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 20);
+		AudioManager amr = (AudioManager) context
+				.getSystemService(Context.AUDIO_SERVICE);
+		audioMaxVolumn = amr.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+		audioCurrentVolumn = amr.getStreamVolume(AudioManager.STREAM_MUSIC);
+		volumnRatio = audioCurrentVolumn / audioMaxVolumn;
+	}
+
 	@Override
 	public int getGroupCount() {
 		// TODO Auto-generated method stub
@@ -96,32 +100,19 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
 	public View getGroupView(int groupPosition, boolean isExpanded,
 			View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
-		if(convertView==null){
-			convertView=mInflater.inflate(R.layout.cate_group_item_view,null);
+		if (convertView == null) {
+			convertView = mInflater
+					.inflate(R.layout.cate_group_item_view, null);
 		}
 		
-		TextView group=(TextView) convertView.findViewById(R.id.group);
-		ImageView collect=(ImageView) convertView.findViewById(R.id.collect);
-		if(cursor.moveToPosition(groupPosition)){
-			ori=cursor.getString(cursor.getColumnIndex("original"));
+		
+		TextView group = (TextView) convertView.findViewById(R.id.group);
+		
+		if (cursor.moveToPosition(groupPosition)) {
+			ori = cursor.getString(cursor.getColumnIndex("original"));
 			group.setText(ori);
-			collect.setOnClickListener(new OnClickListener() {
-				
-				@SuppressLint("ShowToast")
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					if(cate!=0){
-						questiondb.execSQL("update scene set flag = 1 where original = '"+ori+"'");
-						Toast.makeText(context,"收藏成功", Toast.LENGTH_SHORT).show();
-					}
-					else{
-						questiondb.execSQL("update scene set flag = 0 where original = '"+ori+"'");
-						Toast.makeText(context,"取消收藏成功", Toast.LENGTH_SHORT).show();
-					}
-				}
-			});
 		}
+		
 		return convertView;
 	}
 
@@ -129,41 +120,64 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
 	public View getChildView(int groupPosition, int childPosition,
 			boolean isLastChild, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
-		if(convertView==null){
-			convertView=mInflater.inflate(R.layout.cate_children_item_view, null);
+		if (convertView == null) {
+			convertView = mInflater.inflate(R.layout.cate_children_item_view,
+					null);
 		}
-		TextView child=(TextView) convertView.findViewById(R.id.fschild);
-		TextView pinyin=(TextView) convertView.findViewById(R.id.scchild);
-		ImageView horn=(ImageView) convertView.findViewById(R.id.horn);
-		if(cursor.moveToPosition(groupPosition)){
-			tra=cursor.getString(cursor.getColumnIndex("translate"));
-			pin=cursor.getString(cursor.getColumnIndex("pinyin"));
-			aud=cursor.getString(cursor.getColumnIndex("audio"));		
+		TextView child = (TextView) convertView.findViewById(R.id.fschild);
+		TextView pinyin = (TextView) convertView.findViewById(R.id.scchild);
+		ImageView horn = (ImageView) convertView.findViewById(R.id.horn);
+		ImageView collect = (ImageView) convertView.findViewById(R.id.collect);
+		if (cursor.moveToPosition(groupPosition)) {
+			tra = cursor.getString(cursor.getColumnIndex("translate"));
+			pin = cursor.getString(cursor.getColumnIndex("pinyin"));
+			aud = cursor.getString(cursor.getColumnIndex("audio"));
 			child.setText(tra);
 			pinyin.setText(pin);
 			horn.setOnClickListener(new OnClickListener() {
-				
+
 				Resources res = context.getResources();
 				final String packageName = context.getPackageName();
-				int soundId=res.getIdentifier(aud, "raw", packageName);
-				
-				
-				
+				int soundId = res.getIdentifier(aud, "raw", packageName);
+
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
-					final int playId=sound.load(context, soundId, 0);	
+					final int playId = sound.load(context, soundId, 0);
 					sound.setOnLoadCompleteListener(new OnLoadCompleteListener() {
-						
+
 						@Override
-						public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
+						public void onLoadComplete(SoundPool soundPool,
+								int sampleId, int status) {
 							// TODO Auto-generated method stub
-							sound.play(playId, volumnRatio, volumnRatio, 0, 0, 1);
+							sound.play(playId, volumnRatio, volumnRatio, 0, 0,
+									1);
 						}
 					});
-					
+
 				}
 			});
+			
+			collect.setOnClickListener(new OnClickListener() {
+				@SuppressLint("ShowToast")
+				@Override
+				public void onClick(View v) {	
+					// TODO Auto-generated method stub
+					if (cate != 0) {
+						questiondb
+								.execSQL("update scene set flag = 1 where translate = '"
+										+ tra + "'");
+						Toast.makeText(context, "收藏成功", Toast.LENGTH_SHORT).show();
+					} else {
+						questiondb
+								.execSQL("update scene set flag = 0 where translate = '"
+										+ tra + "'");
+						Toast.makeText(context, "取消收藏成功", Toast.LENGTH_SHORT)
+								.show();
+					}
+				}
+			});
+			
 		}
 		return convertView;
 	}
@@ -173,6 +187,5 @@ public class CategoryAdapter extends BaseExpandableListAdapter {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
-	
+
 }

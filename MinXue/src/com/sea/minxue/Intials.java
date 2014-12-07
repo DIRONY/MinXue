@@ -96,7 +96,6 @@ public class Intials extends Activity implements OnClickListener, OnLoadComplete
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// TODO Auto-generated method stub
-		
 		return true;
 	}
 
@@ -182,4 +181,15 @@ public class Intials extends Activity implements OnClickListener, OnLoadComplete
 		// TODO Auto-generated method stub
 		sound.play(soundid, volumnRatio, volumnRatio, 0, 0, 1);
 	}
+
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		if(sound!=null){
+			sound.release();
+		}
+	}
+	
+	
 }

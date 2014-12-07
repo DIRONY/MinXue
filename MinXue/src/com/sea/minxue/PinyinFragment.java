@@ -27,7 +27,6 @@ public class PinyinFragment extends Fragment {
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
 		View view = inflater.inflate(R.layout.fragment_pinyin, container, false);
-
 		return view;
 	}
 

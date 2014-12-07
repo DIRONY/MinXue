@@ -133,7 +133,9 @@ public class NianyaoFragment extends Fragment implements OnClickListener {
 	public void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		player.release();
+		if(player!=null){
+			player.release();
+		}
 	}
 
 	@Override

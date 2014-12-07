@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.widget.ExpandableListView;
 
 public class CategoryActivity extends ExpandableListActivity {
 	
@@ -32,7 +33,7 @@ public class CategoryActivity extends ExpandableListActivity {
 			cursor=questiondb.rawQuery("select * from scene where flag = 1", null);
 		}
 		cateadapter=new CategoryAdapter(this,cursor,sql_code);
+		cateadapter.notifyDataSetChanged();
 		setListAdapter(cateadapter);
 	}
-	
 }

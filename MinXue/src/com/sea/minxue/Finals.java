@@ -557,5 +557,15 @@ public class Finals extends Activity implements OnClickListener, OnLoadCompleteL
 		// TODO Auto-generated method stub
 		sound.play(soundid, volumnRatio, volumnRatio, 0, 0, 1);
 	}
+
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		if(sound!=null){
+			sound.release();
+		}
+	}
+	
 	
 }

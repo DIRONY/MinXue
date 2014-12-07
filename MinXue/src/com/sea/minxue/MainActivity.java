@@ -1,5 +1,7 @@
 package com.sea.minxue;
 
+import java.io.File;
+
 import com.sea.minxue.dialogue.DialogueFragment;
 import com.sea.minxue.translate.TraslateFragment;
 import com.sea.minxue.usercenter.UsercenterFragment;
@@ -12,6 +14,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.annotation.SuppressLint;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,7 +38,6 @@ public class MainActivity extends ActionBarActivity {
 	private int mImageViewArray[] = { R.drawable.tab_zhuye,
 			R.drawable.tab_duihua, R.drawable.tab_fanyi, R.drawable.tab_yonghu };
 
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -56,6 +59,20 @@ public class MainActivity extends ActionBarActivity {
 			TabSpec minxue_tab_spec = mTabHost.newTabSpec(
 					(String) mTextviewArray[i]).setIndicator(view);
 			mTabHost.addTab(minxue_tab_spec, fragmentArray[i], null);
+			
+			if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())){
+				File sdcardDir =Environment.getExternalStorageDirectory();
+				String path=sdcardDir.getPath()+"/Minxue";
+				File path1 = new File(path);
+				 if (!path1.exists()) {
+
+		             //若不存在，创建目录，可以在应用启动的时候创建
+
+		             path1.mkdirs();
+
+		           }
+			}
+			
 			
 		}
 	}

@@ -28,14 +28,24 @@
 
     <TextView
         android:id="@+id/scchild"
-        android:gravity="left"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/collect"
         android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/fschild"
         android:layout_below="@+id/fschild"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textStyle="bold"
-        android:text="pinyin" />
+        android:gravity="left|center_vertical"
+        android:text="pinyin"
+        android:textStyle="bold" />
+
+     <ImageView
+         android:id="@+id/collect"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/horn"
+         android:layout_below="@+id/horn"
+         android:focusable="false"
+         android:src="@android:drawable/ic_input_get" />
 
 </RelativeLayout>

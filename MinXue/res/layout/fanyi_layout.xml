@@ -48,5 +48,7 @@
 		android:divider="@null"
     	android:dividerHeight="5dp"
     	android:scrollbars="none"
-    	android:cacheColorHint="#00000000"></ListView>
+    	android:cacheColorHint="#00000000">
+        
+    </ListView>
 </RelativeLayout>

@@ -233,6 +233,8 @@ public class Pinyin extends Activity implements OnClickListener {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		questiondb.close();
+		if(questiondb.isOpen()){
+			questiondb.close();
+		}
 	}
 }

@@ -1,0 +1,70 @@
+package com.sea.minxue.translate;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sea.minxue.R;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+
+public class TraslateFragment extends Fragment implements OnClickListener {
+
+	private Button traBtn;
+	private EditText traEditText;
+	private ListView traListView;
+	private List<String>tralist=new ArrayList<String>();
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		View view=inflater.inflate(R.layout.fanyi_layout, null);
+		getActivity().requestWindowFeature(Window.FEATURE_NO_TITLE);
+		traBtn=(Button) view.findViewById(R.id.btn_translation);
+		traBtn.setOnClickListener(this);
+		traEditText=(EditText) view.findViewById(R.id.et_traslantion);
+		traListView=(ListView) view.findViewById(R.id.li_traslation);
+		
+		return view;
+	}
+	
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	class Entity{
+		private String text;
+		private boolean isOri;
+		Entity(){}
+		Entity(String text,boolean isOri){
+			this.text=text;
+			this.isOri=isOri;
+		}
+		
+		public void setText(String text){
+			this.text=text;
+		}
+		
+		public String getText(){
+			return text;
+		}
+		
+		public void setOri(boolean isOri){
+			this.isOri=isOri;
+		}
+		
+		public boolean getOri(){
+			return isOri;
+		}
+	}
+}

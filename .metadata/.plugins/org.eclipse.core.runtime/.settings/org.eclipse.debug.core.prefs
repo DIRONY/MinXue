@@ -4,4 +4,4 @@
 //org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.remoteApplicationLaunchType=org.eclipse.rse.remotecdt.dsf.debug,debug
 eclipse.preferences.version=1
 org.eclipse.debug.core.USE_STEP_FILTERS=true
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="c.getColumnIndex(&quot;original&quot;)"/>\r\n<expression enabled\="true" text\="c.getString(c.getColumnIndex(&quot;original&quot;))"/>\r\n<expression enabled\="true" text\="c.getInt(1);"/>\r\n</watchExpressions>\r\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="tra"/>\r\n<expression enabled\="true" text\="trac"/>\r\n<expression enabled\="true" text\="ori"/>\r\n<expression enabled\="true" text\="ori"/>\r\n</watchExpressions>\r\n

@@ -16,5 +16,4 @@ public class UsercenterFragment extends Fragment {
 		// TODO Auto-generated method stub
 		return inflater.inflate(R.layout.yonghu_layout, null);
 	}
-	
 }
