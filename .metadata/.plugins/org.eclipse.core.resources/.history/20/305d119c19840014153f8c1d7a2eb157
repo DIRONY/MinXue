@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MinXue</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="shengmu_description">声母介绍</string>
+    <string name="shengdiao_description">声调介绍</string>
+    <string name="pinyin_description">拼音测试</string>
+    <string name="yunmu_description">韵母介绍</string>
+    <string name="geyao_description">歌谣唸谣</string>
+    <string name="biandiao_description">变调规则</string>
+    <string name="fanyin_button_text">翻译</string>
+    <string name="yonghu_title">用户中心</string>
+    <string name="fanyi_et_hint">请输入要翻译的字词</string>
+    <string name="actionbar_backbtn_description">回退按钮</string>
+    <string name="sc_shengmu">双唇声母</string>
+    <string name="sjz_shengmu">舌尖中声母</string>
+    <string name="sjq_shengmu">舌尖前声母</string>
+    <string name="sgh_shengmu">舌根喉声母</string>
+    <string name="dyy_yunmu">单元音韵母</string>
+    <string name="fyy_yunmu">复元音韵母</string>
+    <string name="by_yunmu">鼻音韵母</string>
+    <string name="bhyy_yunmu">鼻化元音韵母</string>
+    <string name="rs_h_yunmu">入声h尾韵母</string>
+    <string name="rs_p_yunmu">入声p尾韵母</string>
+    <string name="rs_k_yunmu">入声k尾韵母</string>
+    <string name="rs_t_yunmu">入声t尾韵母</string>
+    <string name="viewpager_title_section_second">拼音学习</string>
+    <string name="viewpager_title_section_first">声调学习</string>
+    <string name="viewpager_title_section_third">歌谣</string>
+    <string name="viewpager_title_section_forth">唸谣</string>
+    <string name="title_activity_ziliao">更多资料</string>
+
+</resources>

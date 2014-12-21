@@ -1,37 +1,26 @@
 package com.sea.minxue.translate;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sea.minxue.MainActivity;
 import com.sea.minxue.QuestionDatabaseHelper;
 import com.sea.minxue.R;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.media.AudioManager;
-import android.media.SoundPool;
-import android.media.SoundPool.OnLoadCompleteListener;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 @SuppressLint("HandlerLeak")
 public class TraslateFragment extends Fragment implements OnClickListener {
@@ -142,36 +131,15 @@ public class TraslateFragment extends Fragment implements OnClickListener {
 		}
 	}
 
-
-//	@Override
-//	public void onItemClick(AdapterView<?> parent, View view, int position,
-//			long id) {
-//		Log.i("click", "click it!!");
-//		// TODO Auto-generated method stub
-//		if(tradapter.getItemViewType(position)==1){
-//			if(audiopath.length()>0){
-//				String path=Environment.getExternalStorageDirectory()
-//						.getAbsolutePath()+"/Minxue/"+audiopath+".mp3";
-//				Log.i("media", path);
-//				final int soundid=sound.load(path, 0);
-//				sound.setOnLoadCompleteListener(new OnLoadCompleteListener() {
-//					
-//					@Override
-//					public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
-//						// TODO Auto-generated method stub
-//						sound.play(soundid, volumnRatio, volumnRatio, 0, 0, 1);
-//					}
-//				});
-//			}
-//		}
-//	}
-
 	@Override
 	public void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
 		if(!trac.isClosed()){
 			trac.close();
+		}
+		if(questiondb.isOpen()){
+			questiondb.close();
 		}
 	}
 	

@@ -30,5 +30,8 @@
     <string name="viewpager_title_section_first">声调学习</string>
     <string name="viewpager_title_section_third">歌谣</string>
     <string name="viewpager_title_section_forth">唸谣</string>
-    
+    <string name="title_activity_ziliao">更多资料</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="title_activity_about">Minxue</string>
+
 </resources>

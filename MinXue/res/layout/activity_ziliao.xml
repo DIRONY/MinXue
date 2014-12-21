@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:text="    台湾闽南语罗马字拼音方案（Tâi-uân Bân-lâm-gí Lô-má-jī Phing-im Hong-àn、简称为台罗拼音（TL）、或台罗，闽南拼音：Dáiwán Bbánlámggî Lóbbnăggî Pīnyīm Hōngàn，英语：The Taiwanese Romanization System）为中华民国官方公布的台湾闽南语拼音方案。此套拼音并非完全新创，而是整合原有的传统罗马字（白话字、POJ）以及台湾语言音标方案（TLPA）的闽南语音标部份而来。台罗拼音方案与白话字的相容性良好，可以视为白话字的增补或发展上的分支。在台湾，使用白话字的社群有较高的意愿使用台罗拼音，同时，在官方地位方面台罗拼音方案取代了TLPA。" 
+        android:textSize="19sp"/>
+    
+
+</RelativeLayout>

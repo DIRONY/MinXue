@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.app.AlertDialog"/>
-<fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
-<fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
 <fullyQualifiedTypeName name="android.content.DialogInterface"/>
 <fullyQualifiedTypeName name="com.sea.minxue.Pinyin"/>
 <fullyQualifiedTypeName name="android.app.Dialog"/>
 <fullyQualifiedTypeName name="com.sea.minxue.Pinyin.StartGame"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
-<fullyQualifiedTypeName name="com.sea.minxue.MainActivity"/>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentTransaction"/>
 <fullyQualifiedTypeName name="android.os.DropBoxManager.Entry"/>
 <fullyQualifiedTypeName name="android.app.ExpandableListActivity"/>
-<fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="android.widget.CursorTreeAdapter"/>
 <fullyQualifiedTypeName name="com.sea.minxue.QuestionDatabaseHelper"/>
 <fullyQualifiedTypeName name="com.sea.minxue.dialogue.CategoryAdapter"/>
@@ -25,10 +20,8 @@
 <fullyQualifiedTypeName name="com.sea.minxue.dialogue.DataUtil"/>
 <fullyQualifiedTypeName name="android.widget.ExpandableListView.OnGroupClickListener"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.media.SoundPool"/>
 <fullyQualifiedTypeName name="android.content.res.Resources"/>
-<fullyQualifiedTypeName name="android.media.SoundPool.OnLoadCompleteListener"/>
 <fullyQualifiedTypeName name="android.media.AudioManager"/>
 <fullyQualifiedTypeName name="android.media.MediaPlayer"/>
 <fullyQualifiedTypeName name="android.media.MediaPlayer.OnCompletionListener"/>
@@ -47,9 +40,6 @@
 <fullyQualifiedTypeName name="android.view.LayoutInflater"/>
 <fullyQualifiedTypeName name="com.sea.minxue.R.bool"/>
 <fullyQualifiedTypeName name="com.sea.minxue.R.layout"/>
-<fullyQualifiedTypeName name="com.sea.minxue.R"/>
-<fullyQualifiedTypeName name="com.sea.minxue.R.id"/>
-<fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="com.sea.minxue.translate.TranslteAdapter.ViewHolder"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="android.text.TextUtils"/>
@@ -58,6 +48,16 @@
 <fullyQualifiedTypeName name="android.os.Message"/>
 <fullyQualifiedTypeName name="android.os.Handler"/>
 <fullyQualifiedTypeName name="android.util.Log"/>
-<fullyQualifiedTypeName name="android.os.Environment"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="android.os.Environment"/>
+<fullyQualifiedTypeName name="android.media.SoundPool.OnLoadCompleteListener"/>
+<fullyQualifiedTypeName name="com.sea.minxue.MainActivity"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.sea.minxue.R"/>
+<fullyQualifiedTypeName name="com.sea.minxue.R.id"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.sea.minxue.usercenter.ZiliaoActivity"/>
+<fullyQualifiedTypeName name="com.sea.minxue.usercenter.MoreActivity"/>
+<fullyQualifiedTypeName name="com.sea.minxue.usercenter.AboutActivity"/>
 </qualifiedTypeNameHistroy>

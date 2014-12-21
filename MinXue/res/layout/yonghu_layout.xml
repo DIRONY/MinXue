@@ -29,6 +29,15 @@
             android:layout_width="match_parent"
             android:layout_height="148dp"
             android:background="@color/softgreen" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/default_avatar" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -42,6 +51,16 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:background="@color/softred" >
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:text="更多资料"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
             </TableRow>
 
             <TableRow
@@ -52,6 +71,15 @@
                 android:layout_below="@+id/tableRow1"
                 android:layout_marginTop="10dp"
                 android:background="@color/softred" >
+                
+                 <TextView
+                    android:id="@+id/secondcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:text="台湾罗马音拼音方案介绍"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
             </TableRow>
 
             <TableRow
@@ -62,6 +90,15 @@
                 android:layout_below="@+id/tableRow2"
                 android:layout_marginTop="10dp"
                 android:background="@color/softred" >
+                
+                 <TextView
+                    android:id="@+id/thirdcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:text="关于闽学"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
             </TableRow>
         </RelativeLayout>
     </LinearLayout>

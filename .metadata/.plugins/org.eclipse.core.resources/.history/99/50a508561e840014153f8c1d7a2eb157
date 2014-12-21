@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    
+    <TextView
+        android:id="@+id/xuexiwang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:autoLink="web"
+        android:text="台罗拼音学习网：http://tailo.moe.edu.tw/" />
+
+    <TextView
+        android:id="@+id/cidian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xuexiwang"
+        android:layout_below="@+id/xuexiwang"
+        android:textSize="15sp"
+        android:autoLink="web"
+        android:text="闽南语常用词辞典：http://twblg.dict.edu.tw " />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/xuexiwang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:src="@drawable/minxue_icon" />
+
+</RelativeLayout>

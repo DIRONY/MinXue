@@ -17,6 +17,7 @@ public class CategoryActivity extends ExpandableListActivity {
 	SQLiteDatabase questiondb;
 	CategoryAdapter cateadapter=null;
 	Cursor cursor;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -36,4 +37,17 @@ public class CategoryActivity extends ExpandableListActivity {
 		cateadapter.notifyDataSetChanged();
 		setListAdapter(cateadapter);
 	}
+
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		if(questiondb.isOpen()){
+			questiondb.close();
+		}
+		if(!cursor.isClosed()){
+			cursor.close();
+		}
+	}
+	
 }

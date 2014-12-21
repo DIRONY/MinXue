@@ -3,10 +3,10 @@
     package="com.sea.minxue"
     android:versionCode="1"
     android:versionName="1.0" >
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
@@ -16,8 +16,6 @@
         android:icon="@drawable/minxue_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
-         
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -34,10 +32,21 @@
         <activity android:name=".Mtone" />
         <activity android:name=".Tone" />
         <activity
-            android:name="com.sea.minxue.dialogue.CategoryActivity"
+            android:name=".dialogue.CategoryActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".usercenter.ZiliaoActivity"
+            android:label="@string/title_activity_ziliao" >
+        </activity>
+        <activity
+            android:name=".usercenter.MoreActivity"
+            android:label="@string/title_activity_more" >
+        </activity>
+        <activity
+            android:name="com.sea.minxue.usercenter.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
     </application>
-   
 
 </manifest>

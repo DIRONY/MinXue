@@ -120,7 +120,7 @@ public class TranslteAdapter extends BaseAdapter {
 		}
 		viewholder.content.setText(tra_text);
 
-		if (getItemViewType(position) == 1) {
+		if (getItemViewType(position) == 1&&audiopath!=null) {
 			if (audiopath.length() > 0) {
 
 				viewholder.content.setOnClickListener(new OnClickListener() {
@@ -150,7 +150,9 @@ public class TranslteAdapter extends BaseAdapter {
 
 			}
 		}
-
+		if(!trac.isClosed()){
+			trac.close();
+		}
 		return convertView;
 	}
 	
